@@ -28,10 +28,9 @@
             tReviewMembers:      'hsl( 0,   0%,  50%)'
         },
 
-        backgrounds: {
-            bMain:            'hsl(0, 0%, 0%)',
-            bHighlightedLine: 'hsl(0, 0%, 25%)'
-        },
+        bMainBackground: 'hsl(0, 0%, 0%)',
+
+        bHighlightedLine: 'hsl(0, 0%, 25%)',
         
         bFileCommentsSeparator: 'hsl(0, 0%, 66%)',
         
@@ -123,7 +122,7 @@
     /*----- Page header -----*/
 
     /* Background */
-    "#atlas { background-color: " + theme.backgrounds.bMain + "; } " +
+    "#atlas { background-color: " + theme.bMainBackground + "; } " +
     
     /* Review title: colour */
     "#reviewHead              { color: " + theme.pageHeader.tReviewTitle + "; } " +
@@ -147,19 +146,22 @@
     /*----- Backgrounds -----*/
 
     /* Main background (can be seen with very short files which don't fill the screen) */
-    "#frx-pane { background-color: " + theme.backgrounds.bMain + "; } " +
+    "#frx-pane { background-color: " + theme.bMainBackground + "; } " +
 
     /* Background of file comments container */
-    ".revision_comments_frxinner { background-color: " + theme.backgrounds.bMain + "; } " +
+    ".revision_comments_frxinner { background-color: " + theme.bMainBackground + "; } " +
 
     /* Background of source code container */
-    ".source { background-color: " + theme.backgrounds.bMain + "; } " +
+    ".source { background-color: " + theme.bMainBackground + "; } " +
+    
+
+    /*----- Highlighted line -----*/
     
     /* Background of a highlighted source code line */
     /* Occurs when: */
     /*   1. Selecting one or more lines to add a user comment */
     /*   2. Hovering over an existing user comment */
-    ".lineHighlighted { background-color: " + theme.backgrounds.bHighlightedLine + "; } " +
+    ".lineHighlighted { background-color: " + theme.bHighlightedLine + "; } " +
     
 
     /*----- File comments separator -----*/
@@ -170,14 +172,14 @@
     /*----- Columns -----*/
 
     /* Column 1 */
-    ".tetrisColumn { background-color: " + theme.backgrounds.bMain + "; font-size: 1pt; } " +
+    ".tetrisColumn { background-color: " + theme.bMainBackground + "; font-size: 1pt; } " +
 
     /* Column 2 */
-    ".diffNav     { background-color: " + theme.backgrounds.bMain + "; border-right: " + theme.oColumnVerticalBorder + "; font-size: 1pt; } " +
+    ".diffNav     { background-color: " + theme.bMainBackground + "; border-right: " + theme.oColumnVerticalBorder + "; font-size: 1pt; } " +
     ".diffNav img { -webkit-filter: invert(100%); } " +
 
     /* Column 3 */
-    ".inlineSource td.author { background-color: " + theme.backgrounds.bMain + "; } " +
+    ".inlineSource td.author { background-color: " + theme.bMainBackground + "; } " +
 
     /* Column 4 */
     "td.revision { background-color: " + theme.revision.bBackground + "; color: " + theme.revision.tText + "; } " +
