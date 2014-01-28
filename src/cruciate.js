@@ -26,6 +26,8 @@
             highlightedLine: 'hsl(0, 0%, 25%)'
         },
         
+        fileCommentsSeparator: 'hsl(0, 0%, 66%)',
+        
         columnVerticalBorder: '1px solid hsl(0, 0%, 38%)',
         
         revision: {
@@ -147,6 +149,11 @@
     /*   1. Selecting one or more lines to add a user comment */
     /*   2. Hovering over an existing user comment */
     ".lineHighlighted { background-color: " + theme.backgrounds.highlightedLine + "; } " +
+    
+
+    /*----- File comments separator -----*/
+    
+    ".inline-comment-tip { background-color: " + theme.fileCommentsSeparator + "; } " +
     
 
     /*----- Columns -----*/
