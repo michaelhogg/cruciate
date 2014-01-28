@@ -16,9 +16,11 @@
         font: 'Monaco',
         
         pageHeader: {
-            reviewTitle:   'hsl(0, 0%, 100%)',
-            reviewState:   'hsl(0, 0%,  50%)',
-            reviewMembers: 'hsl(0, 0%,  50%)'
+            reviewTitle:        'hsl( 0,   0%, 100%)',
+            reviewTitleHover:   'hsl(60, 100%,  20%)',
+            reviewState:        'hsl( 0,   0%,  50%)',
+            reviewStateOverdue: 'hsl( 0, 100%,  40%)',
+            reviewMembers:      'hsl( 0,   0%,  50%)'
         },
 
         backgrounds: {
@@ -118,13 +120,17 @@
     /* Background */
     "#atlas { background-color: " + theme.backgrounds.main + "; } " +
     
-    /* Review title */
+    /* Review title: colour */
     "#reviewHead              { color: " + theme.pageHeader.reviewTitle + "; } " +
     "#reviewHead span.title a { color: " + theme.pageHeader.reviewTitle + "; } " +
+
+    /* Review title: background colour */
+    "#reviewHead.editable:hover { background-color: " + theme.pageHeader.reviewTitleHover + "; } " +
     
     /* Review state */
-    "#review-state      { color: " + theme.pageHeader.reviewState + "; } " +
-    "#review-state span { color: " + theme.pageHeader.reviewState + " !important; } " +
+    "#review-state      { color: " + theme.pageHeader.reviewState        + "; } " +
+    "#review-state span { color: " + theme.pageHeader.reviewState        + " !important; } " +
+    "#review-state em   { color: " + theme.pageHeader.reviewStateOverdue + "; } " +
     
     /* Review members */
     ".review-members h5 { color: " + theme.pageHeader.reviewMembers + "; } " +
