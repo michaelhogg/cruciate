@@ -20,6 +20,8 @@
     
         font: 'Monaco',
         
+        bMainBackground: 'hsl(0, 0%, 0%)',
+
         pageHeader: {
             tReviewTitle:        'hsl( 0,   0%, 100%)',
             bReviewTitleHover:   'hsl(60, 100%,  20%)',
@@ -27,8 +29,6 @@
             tReviewStateOverdue: 'hsl( 0, 100%,  40%)',
             tReviewMembers:      'hsl( 0,   0%,  50%)'
         },
-
-        bMainBackground: 'hsl(0, 0%, 0%)',
 
         bHighlightedLine: 'hsl(0, 0%, 25%)',
         
@@ -119,6 +119,18 @@
     var css = "" +
     
 
+    /*----- Backgrounds -----*/
+
+    /* Main background (can be seen with very short files which don't fill the screen) */
+    "#frx-pane { background-color: " + theme.bMainBackground + "; } " +
+
+    /* Background of file comments container */
+    ".revision_comments_frxinner { background-color: " + theme.bMainBackground + "; } " +
+
+    /* Background of source code container */
+    ".source { background-color: " + theme.bMainBackground + "; } " +
+    
+
     /*----- Page header -----*/
 
     /* Background */
@@ -142,18 +154,6 @@
     /* Progress bar */
     "#status { -webkit-filter: invert(100%); } " +
 
-
-    /*----- Backgrounds -----*/
-
-    /* Main background (can be seen with very short files which don't fill the screen) */
-    "#frx-pane { background-color: " + theme.bMainBackground + "; } " +
-
-    /* Background of file comments container */
-    ".revision_comments_frxinner { background-color: " + theme.bMainBackground + "; } " +
-
-    /* Background of source code container */
-    ".source { background-color: " + theme.bMainBackground + "; } " +
-    
 
     /*----- Highlighted line -----*/
     
