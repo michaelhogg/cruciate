@@ -29,6 +29,12 @@
             tReviewStateOverdue: 'hsl( 0, 100%,  40%)',
             tReviewMembers:      'hsl( 0,   0%,  50%)'
         },
+        
+        navigation: {
+            bHeader: 'hsl(0, 0%,  20%)',
+            tHeader: 'hsl(0, 0%, 100%)',
+            oHeader: '1px solid hsl(0, 0%, 40%)'
+        },
 
         bHighlightedLine: 'hsl(0, 0%, 25%)',
         
@@ -154,6 +160,12 @@
     /* Progress bar */
     "#status { -webkit-filter: invert(100%); } " +
 
+
+    /*----- Navigation -----*/
+    
+    /* Header */
+    "#review-meta h3 { background-color: " + theme.navigation.bHeader + "; color: " + theme.navigation.tHeader + "; border: " + theme.navigation.oHeader + "; } " +
+    
 
     /*----- Highlighted line -----*/
     
