@@ -35,6 +35,13 @@
             tText:       'hsl(0, 0%, 100%)',
             oBorder:     '1px solid hsl(0, 0%, 40%)'
         },
+        
+        lowerToolbar: {
+            tFileAddedName:   'hsl(120, 100%, 45%)',
+            tFileAddedTag:    'hsl(120, 100%, 30%)',
+            tFileDeletedName: 'hsl(  0, 100%, 55%)',
+            tFileDeletedTag:  'hsl(  0, 100%, 40%)'
+        },
 
         bHighlightedLine: 'hsl(0, 0%, 25%)',
         
@@ -175,6 +182,13 @@
     ".frx-header-container .frx-header { background-color: " + theme.toolbars.bBackground + "; border-bottom: " + theme.toolbars.oBorder + "; } " +
     ".frx-header-container             { border-left:      " + theme.toolbars.oBorder     + "; } " +
     ".path-truncated .path-prefix      { color:            " + theme.toolbars.tText       + "; } " +
+    ".frx-actions-primary .stats       { color:            " + theme.toolbars.tText       + "; } " +
+
+    "#content-column span.frx-added                { color: " + theme.lowerToolbar.tFileAddedName + "; } " +
+    "#content-column span.operation-text.frx-added { color: " + theme.lowerToolbar.tFileAddedTag  + "; } " +
+
+    "#content-column span.frx-deleted                { color: " + theme.lowerToolbar.tFileDeletedName + "; } " +
+    "#content-column span.operation-text.frx-deleted { color: " + theme.lowerToolbar.tFileDeletedTag  + "; } " +
 
 
     /*----- Toolbar dropdown menus -----*/
