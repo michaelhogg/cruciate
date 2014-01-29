@@ -169,11 +169,15 @@
     /* Main */
     "#content-column .toolbar                         { color:  " + theme.upperToolbars.tText   + "; background-color: " + theme.upperToolbars.bBackground + "; } " +
     "#reviewpage #review-info-container .toolbar      { border: " + theme.upperToolbars.oBorder + "; } " +
-    ".toolbar-frame .aui-dd-parent a.aui-dd-link      { color:  " + theme.upperToolbars.tText   + "; } " +
     "#time-spent-input                                { color:  " + theme.upperToolbars.tText   + "; } " +
     "#reviewpage .toolbar .toolbar-keyboard-shortcuts { color:  " + theme.upperToolbars.tText   + "; } " +
     
 
+    /*----- Toolbar dropdown menus -----*/
+
+    ".toolbar-frame .aui-dd-parent a.aui-dd-link { color: " + theme.upperToolbars.tText + "; } " +
+
+    
     /*----- Highlighted line -----*/
     
     /* Background of a highlighted source code line */
