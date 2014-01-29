@@ -130,9 +130,6 @@
     /* Body */
     "body { background-color: " + theme.bMainBackground + "; } " +
     
-    /* Source code outer container (background can be seen with very short files which don't fill the screen) */
-    "#frx-pane { background-color: " + theme.bMainBackground + "; } " +
-
     /* Source code inner container */
     ".source { background-color: " + theme.bMainBackground + "; } " +
     
@@ -176,6 +173,11 @@
     /*----- Toolbar dropdown menus -----*/
 
     ".toolbar-frame .aui-dd-parent a.aui-dd-link { color: " + theme.upperToolbars.tText + "; } " +
+
+    
+    /*----- Source code outer container -----*/
+
+    "#frx-pane { background-color: " + theme.bMainBackground + "; border-left: " + theme.upperToolbars.oBorder + "; } " +
 
     
     /*----- Highlighted line -----*/
