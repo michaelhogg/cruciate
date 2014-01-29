@@ -127,21 +127,21 @@
 
     /*----- Backgrounds -----*/
 
-    /* Main background (can be seen with very short files which don't fill the screen) */
+    /* Body */
+    "body { background-color: " + theme.bMainBackground + "; } " +
+    
+    /* Source code outer container (background can be seen with very short files which don't fill the screen) */
     "#frx-pane { background-color: " + theme.bMainBackground + "; } " +
 
-    /* Background of file comments container */
-    ".revision_comments_frxinner { background-color: " + theme.bMainBackground + "; } " +
-
-    /* Background of source code container */
+    /* Source code inner container */
     ".source { background-color: " + theme.bMainBackground + "; } " +
     
+    /* File comments container */
+    ".revision_comments_frxinner { background-color: " + theme.bMainBackground + "; } " +
+
 
     /*----- Page header -----*/
 
-    /* Background */
-    "#atlas { background-color: " + theme.bMainBackground + "; } " +
-    
     /* Review title: colour */
     "#reviewHead              { color: " + theme.pageHeader.tReviewTitle + "; } " +
     "#reviewHead span.title a { color: " + theme.pageHeader.tReviewTitle + "; } " +
