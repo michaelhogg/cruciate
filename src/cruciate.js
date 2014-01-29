@@ -37,10 +37,13 @@
         },
         
         lowerToolbar: {
+            tFileChangedName: 'hsl(210,  50%, 85%)',
+            tFileChangedTag:  'hsl(210, 100%, 40%)',
             tFileAddedName:   'hsl(120, 100%, 45%)',
             tFileAddedTag:    'hsl(120, 100%, 30%)',
             tFileDeletedName: 'hsl(  0, 100%, 55%)',
-            tFileDeletedTag:  'hsl(  0, 100%, 40%)'
+            tFileDeletedTag:  'hsl(  0, 100%, 40%)',
+            tDropdownMenuFileOutdated: 'hsl(0, 100%, 66%) !important'
         },
 
         bHighlightedLine: 'hsl(0, 0%, 25%)',
@@ -184,11 +187,16 @@
     ".path-truncated .path-prefix      { color:            " + theme.toolbars.tText       + "; } " +
     ".frx-actions-primary .stats       { color:            " + theme.toolbars.tText       + "; } " +
 
+    "#content-column span.frx-changed                { color: " + theme.lowerToolbar.tFileChangedName + "; } " +
+    "#content-column span.operation-text.frx-changed { color: " + theme.lowerToolbar.tFileChangedTag  + "; } " +
+
     "#content-column span.frx-added                { color: " + theme.lowerToolbar.tFileAddedName + "; } " +
     "#content-column span.operation-text.frx-added { color: " + theme.lowerToolbar.tFileAddedTag  + "; } " +
 
     "#content-column span.frx-deleted                { color: " + theme.lowerToolbar.tFileDeletedName + "; } " +
     "#content-column span.operation-text.frx-deleted { color: " + theme.lowerToolbar.tFileDeletedTag  + "; } " +
+    
+    ".frx-outdated a.aui-dd-link { color: " + theme.lowerToolbar.tDropdownMenuFileOutdated + "; } " +
 
 
     /*----- Toolbar dropdown menus -----*/
