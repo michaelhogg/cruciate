@@ -30,7 +30,7 @@
             tReviewMembers:      'hsl( 0,   0%,  50%)'
         },
         
-        upperToolbars: {
+        toolbars: {
             bBackground: 'hsl(0, 0%,  20%)',
             tText:       'hsl(0, 0%, 100%)',
             oBorder:     '1px solid hsl(0, 0%, 40%)'
@@ -161,30 +161,30 @@
     /*----- Upper toolbars -----*/
     
     /* Navigation */
-    "#review-meta h3 { background-color: " + theme.upperToolbars.bBackground + "; color: " + theme.upperToolbars.tText + "; border: " + theme.upperToolbars.oBorder + "; } " +
+    "#review-meta h3 { background-color: " + theme.toolbars.bBackground + "; color: " + theme.toolbars.tText + "; border: " + theme.toolbars.oBorder + "; } " +
     
     /* Main */
-    "#content-column .toolbar                         { color:  " + theme.upperToolbars.tText   + "; background-color: " + theme.upperToolbars.bBackground + "; } " +
-    "#reviewpage #review-info-container .toolbar      { border: " + theme.upperToolbars.oBorder + "; } " +
-    "#time-spent-input                                { color:  " + theme.upperToolbars.tText   + "; } " +
-    "#reviewpage .toolbar .toolbar-keyboard-shortcuts { color:  " + theme.upperToolbars.tText   + "; } " +
+    "#content-column .toolbar                         { color:  " + theme.toolbars.tText   + "; background-color: " + theme.toolbars.bBackground + "; } " +
+    "#reviewpage #review-info-container .toolbar      { border: " + theme.toolbars.oBorder + "; } " +
+    "#time-spent-input                                { color:  " + theme.toolbars.tText   + "; } " +
+    "#reviewpage .toolbar .toolbar-keyboard-shortcuts { color:  " + theme.toolbars.tText   + "; } " +
     
 
     /*----- Lower toolbar -----*/
     
-    ".frx-header-container .frx-header { background-color: " + theme.upperToolbars.bBackground + "; border-bottom: " + theme.upperToolbars.oBorder + "; } " +
-    ".frx-header-container             { border-left:      " + theme.upperToolbars.oBorder     + "; } " +
-    ".path-truncated .path-prefix      { color:            " + theme.upperToolbars.tText       + "; } " +
+    ".frx-header-container .frx-header { background-color: " + theme.toolbars.bBackground + "; border-bottom: " + theme.toolbars.oBorder + "; } " +
+    ".frx-header-container             { border-left:      " + theme.toolbars.oBorder     + "; } " +
+    ".path-truncated .path-prefix      { color:            " + theme.toolbars.tText       + "; } " +
 
 
     /*----- Toolbar dropdown menus -----*/
 
-    ".toolbar-frame .aui-dd-parent a.aui-dd-link { color: " + theme.upperToolbars.tText + "; } " +
+    ".toolbar-frame .aui-dd-parent a.aui-dd-link { color: " + theme.toolbars.tText + "; } " +
 
 
     /*----- Source code outer container -----*/
 
-    "#frx-pane { background-color: " + theme.bMainBackground + "; border-left: " + theme.upperToolbars.oBorder + "; } " +
+    "#frx-pane { background-color: " + theme.bMainBackground + "; border-left: " + theme.toolbars.oBorder + "; } " +
 
     
     /*----- Highlighted line -----*/
