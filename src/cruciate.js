@@ -30,10 +30,10 @@
             tReviewMembers:      'hsl( 0,   0%,  50%)'
         },
         
-        navigation: {
-            bHeader: 'hsl(0, 0%,  20%)',
-            tHeader: 'hsl(0, 0%, 100%)',
-            oHeader: '1px solid hsl(0, 0%, 40%)'
+        upperToolbars: {
+            bBackground: 'hsl(0, 0%,  20%)',
+            tText:       'hsl(0, 0%, 100%)',
+            oBorder:     '1px solid hsl(0, 0%, 40%)'
         },
 
         bHighlightedLine: 'hsl(0, 0%, 25%)',
@@ -161,10 +161,10 @@
     "#status { -webkit-filter: invert(100%); } " +
 
 
-    /*----- Navigation -----*/
+    /*----- Upper toolbars -----*/
     
-    /* Header */
-    "#review-meta h3 { background-color: " + theme.navigation.bHeader + "; color: " + theme.navigation.tHeader + "; border: " + theme.navigation.oHeader + "; } " +
+    /* Navigation */
+    "#review-meta h3 { background-color: " + theme.upperToolbars.bBackground + "; color: " + theme.upperToolbars.tText + "; border: " + theme.upperToolbars.oBorder + "; } " +
     
 
     /*----- Highlighted line -----*/
