@@ -259,9 +259,9 @@
     "td.revision { background-color: " + theme.revision.bBackground + "; color: " + theme.revision.tText + "; } " +
 
     /* Column 5 */
-    ".diffLineNumbers  { font-family: " + theme.font + "; color: " + theme.lineNumbers.normal.tText + "; background-color: " + theme.bMainBackground             + "; } " +
-    ".diffLineNumbersA { font-family: " + theme.font + "; color: " + theme.lineNumbers.old.tText    + "; background-color: " + theme.lineNumbers.old.bBackground + "; } " +
-    ".diffLineNumbersB { font-family: " + theme.font + "; color: " + theme.lineNumbers.new.tText    + "; background-color: " + theme.lineNumbers.new.bBackground + "; } " +
+    "td.diffLineNumbers  { font-family: " + theme.font + "; color: " + theme.lineNumbers.normal.tText + "; background-color: " + theme.bMainBackground             + "; } " +
+    "td.diffLineNumbersA { font-family: " + theme.font + "; color: " + theme.lineNumbers.old.tText    + "; background-color: " + theme.lineNumbers.old.bBackground + "; } " +
+    "td.diffLineNumbersB { font-family: " + theme.font + "; color: " + theme.lineNumbers.new.tText    + "; background-color: " + theme.lineNumbers.new.bBackground + "; } " +
 
     /* Column 6 */
     ".lineContent { font-family: " + theme.font                  + "; color: "        + theme.tCodeTextDefault      + "; } " +
