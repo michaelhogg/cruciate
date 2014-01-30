@@ -36,6 +36,8 @@
             oBorder:     '1px solid hsl(0, 0%, 40%)'
         },
         
+        oUpperToolbarSeparatorBorder: '1px solid hsl(0, 0%, 40%)',
+        
         lowerToolbar: {
             tFileChangedName: 'hsl(210,  50%, 85%)',
             tFileChangedTag:  'hsl(210, 100%, 40%)',
@@ -165,10 +167,11 @@
     "#review-meta h3 { background-color: " + theme.toolbars.bBackground + "; color: " + theme.toolbars.tText + "; border: " + theme.toolbars.oBorder + "; } " +
     
     /* Main */
-    "#content-column .toolbar                         { color:  " + theme.toolbars.tText   + "; background-color: " + theme.toolbars.bBackground + "; } " +
-    "#reviewpage #review-info-container .toolbar      { border: " + theme.toolbars.oBorder + "; } " +
-    "#time-spent-input                                { color:  " + theme.toolbars.tText   + "; } " +
-    "#reviewpage .toolbar .toolbar-keyboard-shortcuts { color:  " + theme.toolbars.tText   + "; } " +
+    "#content-column .toolbar                         { color:        " + theme.toolbars.tText               + "; background-color: " + theme.toolbars.bBackground + "; } " +
+    "#reviewpage #review-info-container .toolbar      { border:       " + theme.toolbars.oBorder             + "; } " +
+    "#time-spent-input                                { color:        " + theme.toolbars.tText               + "; } " +
+    "#reviewpage .toolbar .toolbar-keyboard-shortcuts { color:        " + theme.toolbars.tText               + "; } " +
+    ".toolbar .tb_left                                { border-right: " + theme.oUpperToolbarSeparatorBorder + "; } " +
     
 
     /*----- Lower toolbar -----*/
