@@ -121,6 +121,10 @@
         },
         
         diff: {
+            verticalBorder: {
+                oOld: '1px solid hsl(  0, 100%, 50%)',
+                oNew: '1px solid hsl(120, 100%, 40%)'
+            },
             completeBlock: {
                 bOldBackground: 'hsl(  0, 100%, 30%) !important',
                 bNewBackground: 'hsl(120, 100%, 25%) !important'
@@ -300,12 +304,12 @@
     /*----- Diff -----*/
 
     /* Complete block */
-    "td.diffContentA { background-color: " + theme.diff.completeBlock.bOldBackground + "; border-left: " + theme.oColumnVerticalBorder + "; border-right: " + theme.oColumnVerticalBorder + "; } " +
-    "td.diffContentB { background-color: " + theme.diff.completeBlock.bNewBackground + "; border-left: " + theme.oColumnVerticalBorder + "; border-right: " + theme.oColumnVerticalBorder + "; } " +
+    "table td.lineContent.diffContentA { background-color: " + theme.diff.completeBlock.bOldBackground + "; border-left: " + theme.diff.verticalBorder.oOld + "; border-right: " + theme.diff.verticalBorder.oOld + "; } " +
+    "table td.lineContent.diffContentB { background-color: " + theme.diff.completeBlock.bNewBackground + "; border-left: " + theme.diff.verticalBorder.oNew + "; border-right: " + theme.diff.verticalBorder.oNew + "; } " +
 
     /* Partial block: identical */
-    ".ediffContentA { background-color: " + theme.diff.partialBlock.identical.bOldBackground + "; border-left: " + theme.oColumnVerticalBorder + "; border-right: " + theme.oColumnVerticalBorder + "; } " +
-    ".ediffContentB { background-color: " + theme.diff.partialBlock.identical.bNewBackground + "; border-left: " + theme.oColumnVerticalBorder + "; border-right: " + theme.oColumnVerticalBorder + "; } " +
+    "table td.lineContent.ediffContentA { background-color: " + theme.diff.partialBlock.identical.bOldBackground + "; border-left: " + theme.diff.verticalBorder.oOld + "; border-right: " + theme.diff.verticalBorder.oOld + "; } " +
+    "table td.lineContent.ediffContentB { background-color: " + theme.diff.partialBlock.identical.bNewBackground + "; border-left: " + theme.diff.verticalBorder.oNew + "; border-right: " + theme.diff.verticalBorder.oNew + "; } " +
 
     /* Partial block: changed */
     ".ediffChangedA { background-color: " + theme.diff.partialBlock.changed.bOldBackground + "; padding: 1px 0px; } " +
