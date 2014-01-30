@@ -135,17 +135,10 @@
     var css = "" +
     
 
-    /*----- Backgrounds -----*/
+    /*----- Body -----*/
 
-    /* Body */
     "body { background-color: " + theme.bMainBackground + "; } " +
     
-    /* Source code inner container */
-    ".source { background-color: " + theme.bMainBackground + "; } " +
-    
-    /* File comments container */
-    ".revision_comments_frxinner { background-color: " + theme.bMainBackground + "; } " +
-
 
     /*----- Page header -----*/
 
@@ -204,11 +197,21 @@
     ".toolbar-frame .aui-dd-parent a.aui-dd-link { color: " + theme.toolbars.tText + "; } " +
 
 
-    /*----- Source code outer container -----*/
+    /*----- Container for lower toolbar and source code -----*/
 
     "#frx-pane { background-color: " + theme.bMainBackground + "; border-left: " + theme.toolbars.oBorder + "; } " +
 
     
+    /*----- File comments container -----*/
+
+    ".revision_comments_frxinner { background-color: " + theme.bMainBackground + "; } " +
+
+
+    /*----- Source code container -----*/
+
+    ".source { background-color: " + theme.bMainBackground + "; } " +
+    
+
     /*----- Highlighted line -----*/
     
     /* Background of a highlighted source code line */
