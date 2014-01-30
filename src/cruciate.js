@@ -9,6 +9,7 @@
     /*   b = background colour  */
     /*   o = border             */
     /*   d = data URI image     */
+    /*   s = size               */
 
     var themes = {};
     
@@ -131,7 +132,10 @@
                 }
             },
             bNonExistentBlockBackground: palettes.dark.darkGreyBackground,
-            dContextSeparatorBackground: "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAATElEQVQYV4XQAQoAMAQFUM7k/kdwpg01YUEp6pUfBIAj7UVEcbWZmQEj7JBihxNyuCGDglLGl6kG/aAGr6UXE+xQOj0hhxtK79mefgG0Rif++GpEPQAAAABJRU5ErkJggg==') repeat"
+            contextSeparator: {
+                dBackground: "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAATElEQVQYV4XQAQoAMAQFUM7k/kdwpg01YUEp6pUfBIAj7UVEcbWZmQEj7JBihxNyuCGDglLGl6kG/aAGr6UXE+xQOj0hhxtK79mefgG0Rif++GpEPQAAAABJRU5ErkJggg==') repeat",
+                sHeight:     '50px'
+            }
         },
         
         userComment: {
@@ -311,7 +315,7 @@
 
     /* Context separator */
     ".activeFrx .diffSkipped    { border: 0; } " +
-    ".activeFrx .diffSkipped td { background: " + theme.diff.dContextSeparatorBackground + "; } " +
+    ".activeFrx .diffSkipped td { background: " + theme.diff.contextSeparator.dBackground + "; height: " + theme.diff.contextSeparator.sHeight + "; } " +
 
 
     /*----- Disable line highlighting -----*/
