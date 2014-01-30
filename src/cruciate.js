@@ -102,8 +102,8 @@
                     bNewBackground: 'hsl(120, 100%, 25%) !important'
                 }
             },
-            bNonExistentBlockBackground: 'hsl(0, 0%, 20%)',
-            bContextSeparatorBackground: 'hsl(0, 0%, 20%)'
+            bNonExistentBlockBackground: 'hsl(  0,  0%, 20%)',
+            bContextSeparatorBackground: 'hsl(210, 60%, 32%)'
         },
         
         userComment: {
@@ -281,6 +281,7 @@
     ".inlineSource td.revision.cell-empty { background-color: " + theme.diff.bNonExistentBlockBackground + "; } " +
 
     /* Context separator */
+    ".activeFrx .diffSkipped    { border: 0; } " +
     ".activeFrx .diffSkipped td { background-image: none; background-color: " + theme.diff.bContextSeparatorBackground + "; } " +
 
 
