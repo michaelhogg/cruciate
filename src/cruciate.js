@@ -79,6 +79,10 @@
         
         oColumnVerticalBorder: palettes.dark.commonBorders,
         
+        author: {
+            bBackground: palettes.dark.darkGreyBackground
+        },
+
         revision: {
             bBackground: palettes.dark.darkGreyBackground,
             tText:       'hsl(0, 0%, 63%)'
@@ -258,7 +262,7 @@
     ".diffNav img { -webkit-filter: invert(100%); } " +
 
     /* Column 3 */
-    ".inlineSource td.author { background-color: " + theme.bMainBackground + "; } " +
+    ".inlineSource td.author { background-color: " + theme.author.bBackground + "; } " +
 
     /* Column 4 */
     "td.revision { background-color: " + theme.revision.bBackground + "; color: " + theme.revision.tText + "; } " +
