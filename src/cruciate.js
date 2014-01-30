@@ -20,7 +20,7 @@
     
         font: 'Monaco',
         
-        bMainBackground: 'hsl(0, 0%, 0%)',
+        bMainBackground: 'hsl(0, 0%, 0%) !important',
 
         pageHeader: {
             tReviewTitle:        'hsl( 0,   0%, 100%)',
@@ -61,11 +61,11 @@
             },
             old: {
                 tText:       'hsl(0, 100%, 50%)',
-                bBackground: 'hsl(0, 100%, 30%)'
+                bBackground: 'hsl(0, 100%, 30%) !important'
             },
             new: {
                 tText:       'hsl(120, 100%, 40%)',
-                bBackground: 'hsl(120, 100%, 25%)'
+                bBackground: 'hsl(120, 100%, 25%) !important'
             }
         },
         
@@ -89,17 +89,17 @@
         
         diff: {
             completeBlock: {
-                bOldBackground: 'hsl(  0, 100%, 30%)',
-                bNewBackground: 'hsl(120, 100%, 25%)'
+                bOldBackground: 'hsl(  0, 100%, 30%) !important',
+                bNewBackground: 'hsl(120, 100%, 25%) !important'
             },
             partialBlock: {
                 identical: {
-                    bOldBackground: 'hsl(  0, 100%, 12%)',
-                    bNewBackground: 'hsl(120, 100%, 10%)'
+                    bOldBackground: 'hsl(  0, 100%, 12%) !important',
+                    bNewBackground: 'hsl(120, 100%, 10%) !important'
                 },
                 changed: {
-                    bOldBackground: 'hsl(  0, 100%, 30%)',
-                    bNewBackground: 'hsl(120, 100%, 25%)'
+                    bOldBackground: 'hsl(  0, 100%, 30%) !important',
+                    bNewBackground: 'hsl(120, 100%, 25%) !important'
                 }
             },
             bNonExistentBlockBackground: 'hsl(0, 0%, 20%)',
@@ -231,13 +231,13 @@
     "td.revision { background-color: " + theme.revision.bBackground + "; color: " + theme.revision.tText + "; } " +
 
     /* Column 5 */
-    ".diffLineNumbers  { font-family: " + theme.font + "; color: " + theme.lineNumbers.normal.tText + "; } " +
+    ".diffLineNumbers  { font-family: " + theme.font + "; color: " + theme.lineNumbers.normal.tText + "; background-color: " + theme.bMainBackground             + "; } " +
     ".diffLineNumbersA { font-family: " + theme.font + "; color: " + theme.lineNumbers.old.tText    + "; background-color: " + theme.lineNumbers.old.bBackground + "; } " +
     ".diffLineNumbersB { font-family: " + theme.font + "; color: " + theme.lineNumbers.new.tText    + "; background-color: " + theme.lineNumbers.new.bBackground + "; } " +
 
     /* Column 6 */
     ".lineContent { font-family: " + theme.font                  + "; color: "        + theme.tCodeTextDefault      + "; } " +
-    ".diffContent { border-left: " + theme.oColumnVerticalBorder + "; border-right: " + theme.oColumnVerticalBorder + "; } " +
+    ".diffContent { border-left: " + theme.oColumnVerticalBorder + "; border-right: " + theme.oColumnVerticalBorder + "; background-color: " + theme.bMainBackground + "; } " +
 
 
     /*----- Tokens -----*/
