@@ -46,8 +46,6 @@
             tDropdownMenuFileOutdated: 'hsl(0, 100%, 66%) !important'
         },
 
-        bHighlightedLine: 'hsl(0, 0%, 25%)',
-        
         bFileCommentsSeparator: 'hsl(0, 0%, 66%)',
         
         oColumnVerticalBorder: '1px solid hsl(0, 0%, 38%)',
@@ -210,15 +208,6 @@
     /*----- Source code container -----*/
 
     ".source { background-color: " + theme.bMainBackground + "; } " +
-    
-
-    /*----- Highlighted line -----*/
-    
-    /* Background of a highlighted source code line */
-    /* Occurs when: */
-    /*   1. Selecting one or more lines to add a user comment */
-    /*   2. Hovering over an existing user comment */
-    ".lineHighlighted { background-color: " + theme.bHighlightedLine + "; } " +
     
 
     /*----- File comments separator -----*/
