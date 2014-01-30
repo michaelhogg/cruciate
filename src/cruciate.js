@@ -12,9 +12,34 @@
     var themes = {};
     
 
+    /*-------------------*/
+    /*  Palettes object  */
+    /*-------------------*/
+    
+    /* Each theme has a palette, which can be used for storing commonly-used colours */
+
+    var palettes = {};
+    
+
     /*--------------*/
     /*  Dark theme  */
     /*--------------*/
+    
+    palettes.dark = {
+    
+        brightText: 'hsl(0, 0%, 100%)',
+        dimText:    'hsl(0, 0%,  50%)',
+        
+        darkGreyBackground: 'hsl(0, 0%, 20%)',
+        
+        commonBorders: '1px solid hsl(0, 0%, 40%)',
+        
+        tokenBlue:   'hsl(210, 100%, 80%)',
+        tokenPurple: 'hsl(290, 100%, 80%)',
+        tokenOrange: 'hsl( 22, 100%, 60%)',
+        tokenYellow: 'hsl( 45, 100%, 66%)'
+    
+    };
 
     themes.dark = {
     
@@ -23,20 +48,20 @@
         bMainBackground: 'hsl(0, 0%, 0%) !important',
 
         pageHeader: {
-            tReviewTitle:        'hsl( 0,   0%, 100%)',
+            tReviewTitle:        palettes.dark.brightText,
             bReviewTitleHover:   'hsl(60, 100%,  20%)',
-            tReviewState:        'hsl( 0,   0%,  50%)',
+            tReviewState:        palettes.dark.dimText,
             tReviewStateOverdue: 'hsl( 0, 100%,  40%)',
-            tReviewMembers:      'hsl( 0,   0%,  50%)'
+            tReviewMembers:      palettes.dark.dimText
         },
         
         toolbars: {
-            bBackground: 'hsl(0, 0%,  20%)',
-            tText:       'hsl(0, 0%, 100%)',
-            oBorder:     '1px solid hsl(0, 0%, 40%)'
+            bBackground: palettes.dark.darkGreyBackground,
+            tText:       palettes.dark.brightText,
+            oBorder:     palettes.dark.commonBorders
         },
         
-        oUpperToolbarSeparatorBorder: '1px solid hsl(0, 0%, 40%)',
+        oUpperToolbarSeparatorBorder: palettes.dark.commonBorders,
         
         lowerToolbar: {
             tFileChangedName: 'hsl(210,  50%, 85%)',
@@ -50,10 +75,10 @@
 
         bFileCommentsSeparator: 'hsl(0, 0%, 66%)',
         
-        oColumnVerticalBorder: '1px solid hsl(0, 0%, 38%)',
+        oColumnVerticalBorder: palettes.dark.commonBorders,
         
         revision: {
-            bBackground: 'hsl(0, 0%, 20%)',
+            bBackground: palettes.dark.darkGreyBackground,
             tText:       'hsl(0, 0%, 63%)'
         },
         
@@ -71,22 +96,22 @@
             }
         },
         
-        tCodeTextDefault: 'hsl(0, 0%, 100%)',
+        tCodeTextDefault: palettes.dark.brightText,
         
         token: {
-            tKeyword:     'hsl(210, 100%, 80%)',
-            tStartTag:    'hsl(210, 100%, 80%)',
-            tEndTag:      'hsl(210, 100%, 80%)',
+            tKeyword:     palettes.dark.tokenBlue,
+            tStartTag:    palettes.dark.tokenBlue,
+            tEndTag:      palettes.dark.tokenBlue,
         
-            tString:      'hsl(290, 100%, 80%)',
-            tCharLiteral: 'hsl(290, 100%, 80%)',
-            tNumeric:     'hsl(290, 100%, 80%)',
+            tString:      palettes.dark.tokenPurple,
+            tCharLiteral: palettes.dark.tokenPurple,
+            tNumeric:     palettes.dark.tokenPurple,
         
-            tComment:     'hsl(22, 100%, 60%)',
-            tTodo:        'hsl(22, 100%, 60%)',
+            tComment:     palettes.dark.tokenOrange,
+            tTodo:        palettes.dark.tokenOrange,
         
-            tIdentifier:  'hsl(45, 100%, 66%)',
-            tAttrib:      'hsl(45, 100%, 66%)'
+            tIdentifier:  palettes.dark.tokenYellow,
+            tAttrib:      palettes.dark.tokenYellow
         },
         
         diff: {
@@ -104,7 +129,7 @@
                     bNewBackground: 'hsl(120, 100%, 25%) !important'
                 }
             },
-            bNonExistentBlockBackground: 'hsl(  0,  0%, 20%)',
+            bNonExistentBlockBackground: palettes.dark.darkGreyBackground,
             bContextSeparatorBackground: 'hsl(210, 60%, 32%)'
         },
         
