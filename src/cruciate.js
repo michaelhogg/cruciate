@@ -45,7 +45,7 @@
     
         font: 'Monaco',
         
-        bMainBackground: 'hsl(0, 0%, 0%) !important',
+        bMainBackground: 'hsl(0, 0%, 0%)',
 
         pageHeader: {
             tReviewTitle:        palettes.dark.brightText,
@@ -312,6 +312,12 @@
     ".activeFrx .diffSkipped    { border: 0; } " +
     ".activeFrx .diffSkipped td { background-image: none; background-color: " + theme.diff.bContextSeparatorBackground + "; } " +
 
+
+    /*----- Disable line highlighting -----*/
+    
+    ".inlineSource .lineHighlighted .diffLineNumbers { background-color: " + theme.diff.bNonExistentBlockBackground + "; } " +
+    ".inlineSource .lineHighlighted .diffContent     { background-color: " + theme.diff.bNonExistentBlockBackground + "; } " +
+    
 
     /*----- User comments -----*/
 
