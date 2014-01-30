@@ -8,6 +8,7 @@
     /*   t = text colour        */
     /*   b = background colour  */
     /*   o = border             */
+    /*   d = data URI image     */
 
     var themes = {};
     
@@ -130,7 +131,7 @@
                 }
             },
             bNonExistentBlockBackground: palettes.dark.darkGreyBackground,
-            bContextSeparatorBackground: 'hsl(210, 60%, 32%)'
+            dContextSeparatorBackground: "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAATElEQVQYV4XQAQoAMAQFUM7k/kdwpg01YUEp6pUfBIAj7UVEcbWZmQEj7JBihxNyuCGDglLGl6kG/aAGr6UXE+xQOj0hhxtK79mefgG0Rif++GpEPQAAAABJRU5ErkJggg==') repeat"
         },
         
         userComment: {
@@ -310,7 +311,7 @@
 
     /* Context separator */
     ".activeFrx .diffSkipped    { border: 0; } " +
-    ".activeFrx .diffSkipped td { background-image: none; background-color: " + theme.diff.bContextSeparatorBackground + "; } " +
+    ".activeFrx .diffSkipped td { background: " + theme.diff.dContextSeparatorBackground + "; } " +
 
 
     /*----- Disable line highlighting -----*/
