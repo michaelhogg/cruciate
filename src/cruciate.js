@@ -135,7 +135,6 @@
                     bNewBackground: 'hsl(120, 100%, 25%) !important'
                 }
             },
-            bNonExistentBlockBackground: palettes.dark.darkGreyBackground,
             contextSeparator: {
                 dBackground: "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAATElEQVQYV4XQAQoAMAQFUM7k/kdwpg01YUEp6pUfBIAj7UVEcbWZmQEj7JBihxNyuCGDglLGl6kG/aAGr6UXE+xQOj0hhxtK79mefgG0Rif++GpEPQAAAABJRU5ErkJggg==') repeat",
                 sHeight:     '50px'
@@ -313,9 +312,9 @@
     ".ediffChangedB { background-color: " + theme.diff.partialBlock.changed.bNewBackground + "; padding: 1px 0px; } " +
 
     /* Non-existent block (code doesn't exist in other pane) */
-    ".cells-empty             .cell-empty { background-color: " + theme.diff.bNonExistentBlockBackground + "; } " +
-    ".inlineSource   td.author.cell-empty { background-color: " + theme.diff.bNonExistentBlockBackground + "; } " +
-    ".inlineSource td.revision.cell-empty { background-color: " + theme.diff.bNonExistentBlockBackground + "; } " +
+    ".cells-empty             .cell-empty { background-color: " + theme.bMainBackground      + "; } " +
+    ".inlineSource   td.author.cell-empty { background-color: " + theme.author.bBackground   + "; } " +
+    ".inlineSource td.revision.cell-empty { background-color: " + theme.revision.bBackground + "; } " +
 
     /* Context separator */
     ".activeFrx .diffSkipped    { border: 0; } " +
@@ -324,8 +323,8 @@
 
     /*----- Disable line highlighting -----*/
     
-    ".inlineSource .lineHighlighted .diffLineNumbers { background-color: " + theme.diff.bNonExistentBlockBackground + "; } " +
-    ".inlineSource .lineHighlighted .diffContent     { background-color: " + theme.diff.bNonExistentBlockBackground + "; } " +
+    ".inlineSource .lineHighlighted .diffLineNumbers { background-color: " + theme.bMainBackground + "; } " +
+    ".inlineSource .lineHighlighted .diffContent     { background-color: " + theme.bMainBackground + "; } " +
     
 
     /*----- User comments -----*/
