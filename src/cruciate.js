@@ -67,7 +67,11 @@
             oBorder:     palettes.dark.commonBorders
         },
         
-        oUpperToolbarSeparatorBorder: palettes.dark.commonBorders,
+        upperToolbar: {
+            oCellSeparator:            palettes.dark.commonBorders,
+            tMarkCommentsRead:         'hsl(45, 100%, 60%)',
+            tMarkCommentsReadDisabled: 'hsl( 0,   0%, 35%)'
+        },
         
         lowerToolbar: {
             tFileChangedName: palettes.dark.fileChanged,
@@ -218,17 +222,21 @@
     "#status { -webkit-filter: invert(100%); } " +
 
 
-    /*----- Upper toolbars -----*/
+    /*----- Upper toolbar: Navigation -----*/
     
-    /* Navigation */
     "#review-meta h3 { background-color: " + theme.toolbars.bBackground + "; color: " + theme.toolbars.tText + "; border: " + theme.toolbars.oBorder + "; } " +
     
-    /* Main */
-    "#content-column .toolbar                         { color:        " + theme.toolbars.tText               + "; background-color: " + theme.toolbars.bBackground + "; } " +
-    "#reviewpage #review-info-container .toolbar      { border:       " + theme.toolbars.oBorder             + "; } " +
-    "#time-spent-input                                { color:        " + theme.toolbars.tText               + "; } " +
-    "#reviewpage .toolbar .toolbar-keyboard-shortcuts { color:        " + theme.toolbars.tText               + "; } " +
-    ".toolbar .tb_left                                { border-right: " + theme.oUpperToolbarSeparatorBorder + "; } " +
+
+    /*----- Upper toolbar: Main -----*/
+    
+    "#content-column .toolbar                         { color:  " + theme.toolbars.tText   + "; background-color: " + theme.toolbars.bBackground + "; } " +
+    "#reviewpage #review-info-container .toolbar      { border: " + theme.toolbars.oBorder + "; } " +
+    "#time-spent-input                                { color:  " + theme.toolbars.tText   + "; } " +
+    "#reviewpage .toolbar .toolbar-keyboard-shortcuts { color:  " + theme.toolbars.tText   + "; } " +
+
+    ".toolbar .tb_left                               { border-right: " + theme.upperToolbar.oCellSeparator            + "; } " +
+    "#mark-comments-read-button a                    { color:        " + theme.upperToolbar.tMarkCommentsRead         + "; } " +
+    "#mark-comments-read-button.tb_button.disabled a { color:        " + theme.upperToolbar.tMarkCommentsReadDisabled + "; } " +
     
 
     /*----- Lower toolbar -----*/
