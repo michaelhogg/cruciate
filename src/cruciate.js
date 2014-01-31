@@ -82,6 +82,9 @@
         navigation: {
             oBorder:        palettes.dark.commonBorders,
             tNumberOfFiles: palettes.dark.dimText,
+            oSourceNodeHR:  palettes.dark.commonBorders,
+            bSourceNode:    'hsl(0, 0%, 40%)',
+            tSourceNode:    palettes.dark.brightText,
             tFolder:        palettes.dark.brightText,
             tCommentCount:  palettes.dark.brightText,
             tFileChanged:   palettes.dark.fileChanged,
@@ -254,9 +257,11 @@
 
     /*----- Navigation -----*/
     
-    "#reviewpage #content-navigation    { border: " + theme.navigation.oBorder        + "; background-color: " + theme.bMainBackground + "; } " +
-    "#frx-overview span.number-of-files { color:  " + theme.navigation.tNumberOfFiles + "; } " +
-    "#navigation-tree .tree span.folder { color:  " + theme.navigation.tFolder        + "; } " +
+    "#reviewpage #content-navigation           { border:     " + theme.navigation.oBorder        + "; background-color: " + theme.bMainBackground + "; } " +
+    "#frx-overview span.number-of-files        { color:      " + theme.navigation.tNumberOfFiles + "; } " +
+    "#tree-root li.source-node .source-node-hr { border-top: " + theme.navigation.oSourceNodeHR  + "; } " +
+    "#tree-root li.source-node > span          { background: " + theme.navigation.bSourceNode    + "; color: " + theme.navigation.tSourceNode + "; } " +
+    "#navigation-tree .tree span.folder        { color:      " + theme.navigation.tFolder        + "; } " +
 
     "#navigation-tree .tree .stats .commentCount       { color: " + theme.navigation.tCommentCount + "; } " +
     "#navigation-tree .tree .stats .unreadCommentCount { color: " + theme.navigation.tCommentCount + "; } " +
