@@ -30,7 +30,7 @@
     palettes.dark = {
     
         brightText: 'hsl(0, 0%, 100%)',
-        dimText:    'hsl(0, 0%,  50%)',
+        dimText:    'hsl(0, 0%,  60%)',
         
         darkGreyBackground: 'hsl(0, 0%, 20%)',
         
