@@ -78,6 +78,19 @@
             tFileDeletedTag:  'hsl(  0, 100%, 40%)',
             tDropdownMenuFileOutdated: 'hsl(0, 100%, 66%) !important'  /* !important is required because the original style is also !important */
         },
+        
+        navigation: {
+            oBorder:        palettes.dark.commonBorders,
+            tNumberOfFiles: palettes.dark.dimText,
+            tFolder:        palettes.dark.brightText,
+            tCommentCount:  palettes.dark.brightText,
+            tFileChanged:   palettes.dark.fileChanged,
+            tFileAdded:     palettes.dark.fileAdded,
+            tFileDeleted:   palettes.dark.fileDeleted,
+            oInactiveFile:  '2px solid hsl(  0,   0%,  0%)',
+            oActiveFile:    '2px solid hsl(210, 100%, 80%)',
+            bActiveFile:    'hsl(210, 100%, 30%)'
+        },
 
         bFileCommentsSeparator: 'hsl(0, 0%, 66%)',
         
@@ -237,6 +250,23 @@
     /*----- Toolbar dropdown menus -----*/
 
     ".toolbar-frame .aui-dd-parent a.aui-dd-link { color: " + theme.toolbars.tText + "; } " +
+
+
+    /*----- Navigation -----*/
+    
+    "#reviewpage #content-navigation    { border: " + theme.navigation.oBorder        + "; background-color: " + theme.bMainBackground + "; } " +
+    "#frx-overview span.number-of-files { color:  " + theme.navigation.tNumberOfFiles + "; } " +
+    "#navigation-tree .tree span.folder { color:  " + theme.navigation.tFolder        + "; } " +
+
+    "#navigation-tree .tree .stats .commentCount       { color: " + theme.navigation.tCommentCount + "; } " +
+    "#navigation-tree .tree .stats .unreadCommentCount { color: " + theme.navigation.tCommentCount + "; } " +
+    
+    "#navigation-tree .tree span.frx-changed a { color: " + theme.navigation.tFileChanged + "; } " +
+    "#navigation-tree .tree span.frx-added a   { color: " + theme.navigation.tFileAdded   + "; } " +
+    "#navigation-tree .tree span.frx-deleted a { color: " + theme.navigation.tFileDeleted + "; } " +
+    
+    "#tree-root li > span           { border-left: " + theme.navigation.oInactiveFile + "; } " +
+    "#tree-root li.activeFrx > span { border-left: " + theme.navigation.oActiveFile   + "; background-color: " + theme.navigation.bActiveFile + "; } " +
 
 
     /*----- Container for lower toolbar and source code -----*/
