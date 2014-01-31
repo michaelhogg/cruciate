@@ -36,6 +36,10 @@
         
         commonBorders: '1px solid hsl(0, 0%, 40%)',
         
+        fileChanged: 'hsl(210,  50%, 85%)',
+        fileAdded:   'hsl(120, 100%, 45%)',
+        fileDeleted: 'hsl(  0, 100%, 55%)',
+        
         tokenBlue:   'hsl(210, 100%, 80%)',
         tokenPurple: 'hsl(290, 100%, 80%)',
         tokenOrange: 'hsl( 22, 100%, 60%)',
@@ -66,13 +70,13 @@
         oUpperToolbarSeparatorBorder: palettes.dark.commonBorders,
         
         lowerToolbar: {
-            tFileChangedName: 'hsl(210,  50%, 85%)',
+            tFileChangedName: palettes.dark.fileChanged,
             tFileChangedTag:  'hsl(210, 100%, 40%)',
-            tFileAddedName:   'hsl(120, 100%, 45%)',
+            tFileAddedName:   palettes.dark.fileAdded,
             tFileAddedTag:    'hsl(120, 100%, 30%)',
-            tFileDeletedName: 'hsl(  0, 100%, 55%)',
+            tFileDeletedName: palettes.dark.fileDeleted,
             tFileDeletedTag:  'hsl(  0, 100%, 40%)',
-            tDropdownMenuFileOutdated: 'hsl(0, 100%, 66%) !important'
+            tDropdownMenuFileOutdated: 'hsl(0, 100%, 66%) !important'  /* !important is required because the original style is also !important */
         },
 
         bFileCommentsSeparator: 'hsl(0, 0%, 66%)',
