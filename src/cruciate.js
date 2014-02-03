@@ -98,6 +98,15 @@
             oActiveFile:    '2px solid hsl(210, 100%, 80%)',
             bActiveFile:    'hsl(210, 100%, 30%)'
         },
+        
+        overviewGeneralComments: {
+            tOverviewHeading:   palettes.dark.brightText,
+            tTableHeaderCell:   palettes.dark.brightText,
+            tTableNormalCell:   palettes.dark.brightText,
+            tLinkedIssue:       palettes.dark.dimText,
+            tNoObjectives:      palettes.dark.dimText,
+            tNoGeneralComments: palettes.dark.dimText
+        },
 
         bFileCommentsSeparator: 'hsl(0, 0%, 66%)',
         
@@ -280,7 +289,24 @@
     
     "#tree-root li > span           { border-left: " + theme.navigation.oInactiveFile + "; } " +
     "#tree-root li.activeFrx > span { border-left: " + theme.navigation.oActiveFile   + "; background-color: " + theme.navigation.bActiveFile + "; } " +
+    
+    
+    /*----- Overview and general comments -----*/
+    
+    ".overview-item h4.overview-heading { color: " + theme.overviewGeneralComments.tOverviewHeading + "; } " +
 
+    "div#generalComments.activeFrx { background-color: " + theme.bMainBackground + "; } " +
+    "#generalCommentsInner         { background-color: " + theme.bMainBackground + "; } " +
+    
+    "#details .base-table th { color: " + theme.overviewGeneralComments.tTableHeaderCell + "; } " +
+    "#details .base-table td { color: " + theme.overviewGeneralComments.tTableNormalCell + "; } " +
+    
+    "#review-meta-links li.top-level .heading       { color: " + theme.overviewGeneralComments.tLinkedIssue + "; } " +
+    "#review-meta-links li.top-level span.top-level { color: " + theme.overviewGeneralComments.tLinkedIssue + "; } " +
+    
+    ".overview-body .overview-content .objectives .meta-objectives { color: " + theme.overviewGeneralComments.tNoObjectives      + "; } " +
+    ".overview-body .overview-content #no-general-comments em      { color: " + theme.overviewGeneralComments.tNoGeneralComments + "; } " +
+    
 
     /*----- Container for lower toolbar and source code -----*/
 
