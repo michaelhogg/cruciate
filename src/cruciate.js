@@ -122,14 +122,14 @@
         },
         
         lineNumbers: {
-            normal: {
+            normalLines: {
                 tText:       'hsl(0, 0%, 40%)'
             },
-            old: {
+            oldLines: {
                 tText:       'hsl(0, 100%, 50%)',
                 bBackground: 'hsl(0, 100%, 30%) !important'
             },
-            new: {
+            newLines: {
                 tText:       'hsl(120, 100%, 40%)',
                 bBackground: 'hsl(120, 100%, 25%) !important'
             }
@@ -344,9 +344,9 @@
     "td.revision { background-color: " + theme.revision.bBackground + "; color: " + theme.revision.tText + "; } " +
 
     /* Column 5 */
-    "td.diffLineNumbers  { font-family: " + theme.font + "; color: " + theme.lineNumbers.normal.tText + "; background-color: " + theme.bMainBackground             + "; } " +
-    "td.diffLineNumbersA { font-family: " + theme.font + "; color: " + theme.lineNumbers.old.tText    + "; background-color: " + theme.lineNumbers.old.bBackground + "; } " +
-    "td.diffLineNumbersB { font-family: " + theme.font + "; color: " + theme.lineNumbers.new.tText    + "; background-color: " + theme.lineNumbers.new.bBackground + "; } " +
+    "td.diffLineNumbers  { font-family: " + theme.font + "; color: " + theme.lineNumbers.normalLines.tText + "; background-color: " + theme.bMainBackground                  + "; } " +
+    "td.diffLineNumbersA { font-family: " + theme.font + "; color: " + theme.lineNumbers.oldLines.tText    + "; background-color: " + theme.lineNumbers.oldLines.bBackground + "; } " +
+    "td.diffLineNumbersB { font-family: " + theme.font + "; color: " + theme.lineNumbers.newLines.tText    + "; background-color: " + theme.lineNumbers.newLines.bBackground + "; } " +
 
     /* Column 6 */
     ".lineContent { font-family: " + theme.font                  + "; color: "        + theme.tCodeTextDefault      + "; } " +
