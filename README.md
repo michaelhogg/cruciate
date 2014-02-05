@@ -1,6 +1,8 @@
 # cruciate
 
-Colour themes bookmarklet for Atlassian's Crucible.
+Colour themes bookmarklet for [Atlassian](http://www.atlassian.com/)'s [Crucible](http://www.atlassian.com/software/crucible/).
+
+Tested with Crucible 3.2.4.
 
 ## How to build
 
