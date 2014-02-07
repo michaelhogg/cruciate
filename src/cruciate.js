@@ -414,9 +414,9 @@
     /*  Create and append style node  */
     /*--------------------------------*/
 
-	var styleElement = document.createElement('style');
-	styleElement.type = 'text/css';
-	styleElement.appendChild(document.createTextNode(css));
-	document.getElementsByTagName('head')[0].appendChild(styleElement);
+    var styleElement = document.createElement('style');
+    styleElement.type = 'text/css';
+    styleElement.appendChild(document.createTextNode(css));
+    document.getElementsByTagName('head')[0].appendChild(styleElement);
 
 })();
