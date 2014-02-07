@@ -14,110 +14,105 @@
     var themes = {};
     
 
-    /*-------------------*/
-    /*  Palettes object  */
-    /*-------------------*/
-    
-    // Each theme has a palette, which can be used for storing commonly-used colours
-
-    var palettes = {};
-    
-
     /*--------------*/
     /*  Dark theme  */
     /*--------------*/
     
-    palettes.dark = {
+    themes.dark = {
     
-        brightText: 'hsl(0, 0%, 100%)',
-        dimText:    'hsl(0, 0%,  60%)',
+        palette: {
+    
+            brightText: 'hsl(0, 0%, 100%)',
+            dimText:    'hsl(0, 0%,  60%)',
         
-        darkGreyBackground: 'hsl(0, 0%, 20%)',
+            darkGreyBackground: 'hsl(0, 0%, 20%)',
         
-        commonBorders: '1px solid hsl(0, 0%, 40%)',
+            commonBorders: '1px solid hsl(0, 0%, 40%)',
         
-        fileChanged: 'hsl(210,  50%, 85%)',
-        fileAdded:   'hsl(120, 100%, 45%)',
-        fileDeleted: 'hsl(  0, 100%, 55%)',
+            fileChanged: 'hsl(210,  50%, 85%)',
+            fileAdded:   'hsl(120, 100%, 45%)',
+            fileDeleted: 'hsl(  0, 100%, 55%)',
         
-        tokenBlue:   'hsl(210, 100%, 80%)',
-        tokenPurple: 'hsl(290, 100%, 80%)',
-        tokenOrange: 'hsl( 22, 100%, 60%)',
-        tokenYellow: 'hsl( 45, 100%, 66%)'
+            tokenBlue:   'hsl(210, 100%, 80%)',
+            tokenPurple: 'hsl(290, 100%, 80%)',
+            tokenOrange: 'hsl( 22, 100%, 60%)',
+            tokenYellow: 'hsl( 45, 100%, 66%)'
+    
+        }
     
     };
-
-    themes.dark = {
+    
+    themes.dark.properties = {
     
         font: 'Monaco',
         
         bMainBackground: 'hsl(0, 0%, 0%)',
 
         pageHeader: {
-            tReviewTitle:        palettes.dark.brightText,
+            tReviewTitle:        themes.dark.palette.brightText,
             bReviewTitleHover:   'hsl(60, 100%,  20%)',
-            tReviewState:        palettes.dark.dimText,
+            tReviewState:        themes.dark.palette.dimText,
             tReviewStateOverdue: 'hsl( 0, 100%,  40%)',
-            tReviewMembers:      palettes.dark.dimText
+            tReviewMembers:      themes.dark.palette.dimText
         },
         
         toolbars: {
-            bBackground: palettes.dark.darkGreyBackground,
-            tText:       palettes.dark.brightText,
-            oBorder:     palettes.dark.commonBorders
+            bBackground: themes.dark.palette.darkGreyBackground,
+            tText:       themes.dark.palette.brightText,
+            oBorder:     themes.dark.palette.commonBorders
         },
         
         upperToolbar: {
-            oCellSeparator:            palettes.dark.commonBorders,
+            oCellSeparator:            themes.dark.palette.commonBorders,
             tMarkCommentsRead:         'hsl(45, 100%, 60%)',
             tMarkCommentsReadDisabled: 'hsl( 0,   0%, 35%)'
         },
         
         lowerToolbar: {
-            tFileChangedName: palettes.dark.fileChanged,
+            tFileChangedName: themes.dark.palette.fileChanged,
             tFileChangedTag:  'hsl(210, 100%, 40%)',
-            tFileAddedName:   palettes.dark.fileAdded,
+            tFileAddedName:   themes.dark.palette.fileAdded,
             tFileAddedTag:    'hsl(120, 100%, 30%)',
-            tFileDeletedName: palettes.dark.fileDeleted,
+            tFileDeletedName: themes.dark.palette.fileDeleted,
             tFileDeletedTag:  'hsl(  0, 100%, 40%)',
             tDropdownMenuFileOutdated: 'hsl(0, 100%, 66%) !important'  // !important is required because the original style is also !important
         },
         
         navigation: {
-            oBorder:        palettes.dark.commonBorders,
-            tNumberOfFiles: palettes.dark.dimText,
-            oSourceNodeHR:  palettes.dark.commonBorders,
+            oBorder:        themes.dark.palette.commonBorders,
+            tNumberOfFiles: themes.dark.palette.dimText,
+            oSourceNodeHR:  themes.dark.palette.commonBorders,
             bSourceNode:    'hsl(0, 0%, 40%)',
-            tSourceNode:    palettes.dark.brightText,
-            tFolder:        palettes.dark.brightText,
-            tCommentCount:  palettes.dark.brightText,
-            tFileChanged:   palettes.dark.fileChanged,
-            tFileAdded:     palettes.dark.fileAdded,
-            tFileDeleted:   palettes.dark.fileDeleted,
+            tSourceNode:    themes.dark.palette.brightText,
+            tFolder:        themes.dark.palette.brightText,
+            tCommentCount:  themes.dark.palette.brightText,
+            tFileChanged:   themes.dark.palette.fileChanged,
+            tFileAdded:     themes.dark.palette.fileAdded,
+            tFileDeleted:   themes.dark.palette.fileDeleted,
             oInactiveFile:  '2px solid hsl(  0,   0%,  0%)',
             oActiveFile:    '2px solid hsl(210, 100%, 80%)',
             bActiveFile:    'hsl(210, 100%, 30%)'
         },
         
         overviewGeneralComments: {
-            tOverviewHeading:   palettes.dark.brightText,
-            tTableHeaderCell:   palettes.dark.brightText,
-            tTableNormalCell:   palettes.dark.brightText,
-            tLinkedIssue:       palettes.dark.dimText,
-            tNoObjectives:      palettes.dark.dimText,
-            tNoGeneralComments: palettes.dark.dimText
+            tOverviewHeading:   themes.dark.palette.brightText,
+            tTableHeaderCell:   themes.dark.palette.brightText,
+            tTableNormalCell:   themes.dark.palette.brightText,
+            tLinkedIssue:       themes.dark.palette.dimText,
+            tNoObjectives:      themes.dark.palette.dimText,
+            tNoGeneralComments: themes.dark.palette.dimText
         },
 
         bFileCommentsSeparator: 'hsl(0, 0%, 66%)',
         
-        oColumnVerticalBorder: palettes.dark.commonBorders,
+        oColumnVerticalBorder: themes.dark.palette.commonBorders,
         
         author: {
-            bBackground: palettes.dark.darkGreyBackground
+            bBackground: themes.dark.palette.darkGreyBackground
         },
 
         revision: {
-            bBackground: palettes.dark.darkGreyBackground,
+            bBackground: themes.dark.palette.darkGreyBackground,
             tText:       'hsl(0, 0%, 63%)'
         },
         
@@ -135,22 +130,22 @@
             }
         },
         
-        tCodeTextDefault: palettes.dark.brightText,
+        tCodeTextDefault: themes.dark.palette.brightText,
         
         token: {
-            tKeyword:     palettes.dark.tokenBlue,
-            tStartTag:    palettes.dark.tokenBlue,
-            tEndTag:      palettes.dark.tokenBlue,
+            tKeyword:     themes.dark.palette.tokenBlue,
+            tStartTag:    themes.dark.palette.tokenBlue,
+            tEndTag:      themes.dark.palette.tokenBlue,
         
-            tString:      palettes.dark.tokenPurple,
-            tCharLiteral: palettes.dark.tokenPurple,
-            tNumeric:     palettes.dark.tokenPurple,
+            tString:      themes.dark.palette.tokenPurple,
+            tCharLiteral: themes.dark.palette.tokenPurple,
+            tNumeric:     themes.dark.palette.tokenPurple,
         
-            tComment:     palettes.dark.tokenOrange,
-            tTodo:        palettes.dark.tokenOrange,
+            tComment:     themes.dark.palette.tokenOrange,
+            tTodo:        themes.dark.palette.tokenOrange,
         
-            tIdentifier:  palettes.dark.tokenYellow,
-            tAttrib:      palettes.dark.tokenYellow
+            tIdentifier:  themes.dark.palette.tokenYellow,
+            tAttrib:      themes.dark.palette.tokenYellow
         },
         
         diff: {
@@ -195,7 +190,7 @@
     /*  Active theme  */
     /*----------------*/
 
-    var theme = themes.dark;
+    var theme = themes.dark.properties;
 
 
     /*--------------*/
