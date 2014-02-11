@@ -38,6 +38,12 @@
             tokenOrange: 'hsl( 22, 100%, 60%)',
             tokenYellow: 'hsl( 45, 100%, 66%)'
     
+        },
+        
+        images: {
+        
+            contextSeparatorBackground: "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAATElEQVQYV4XQAQoAMAQFUM7k/kdwpg01YUEp6pUfBIAj7UVEcbWZmQEj7JBihxNyuCGDglLGl6kG/aAGr6UXE+xQOj0hhxtK79mefgG0Rif++GpEPQAAAABJRU5ErkJggg==') repeat"
+        
         }
     
     };
@@ -168,7 +174,7 @@
                 }
             },
             contextSeparator: {
-                dBackground: "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAATElEQVQYV4XQAQoAMAQFUM7k/kdwpg01YUEp6pUfBIAj7UVEcbWZmQEj7JBihxNyuCGDglLGl6kG/aAGr6UXE+xQOj0hhxtK79mefgG0Rif++GpEPQAAAABJRU5ErkJggg==') repeat",
+                dBackground: themes.dark.images.contextSeparatorBackground,
                 sHeight:     '50px'
             }
         },
