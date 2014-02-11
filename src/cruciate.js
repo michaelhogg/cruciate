@@ -42,7 +42,7 @@
         
         images: {
         
-            contextSeparatorBackground: "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAATElEQVQYV4XQAQoAMAQFUM7k/kdwpg01YUEp6pUfBIAj7UVEcbWZmQEj7JBihxNyuCGDglLGl6kG/aAGr6UXE+xQOj0hhxtK79mefgG0Rif++GpEPQAAAABJRU5ErkJggg==') repeat"
+            contextSeparatorBackground: "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQUlEQVR4nIzKSw4AIAxCQe7E/c9WozZ+YiMs3gYGAOKM5FN+FtpQoAkNFLBQBSs0dgdd8IcWVCiNRr0GAAD//wMAMxCBfyEN4bcAAAAASUVORK5CYII=') repeat"
         
         }
     
