@@ -42,6 +42,7 @@
         
         images: {
         
+            progressBarBackgroundImage: "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAi4AAAAgCAYAAAA13/OGAAAACXBIWXMAAAsTAAALEwEAmpwYAAACgUlEQVR4nOzdMVLjMBQG4NCp2iIdV/AlcomU3EUcg54yR+Ecm2MA0iCokl2bmUTW81d8zMRy8UbY1p9YlncppQ+AoN6KXByKfXNo295WUB+w0K53AQA38lJMxe6Kqe3Tu05gAcElpffitTgWj82xbXtfQX3AcjWQ/CkeiqfiVJybU9v20PYRXmAgWw8uNZjkdP0bWU7CC4ym3gKqv6bUYPL8j/2e2z5TctsIhrH14FJ/VbkWWr69rqBOYL6cvs7dp/b5b9s2Nblt+2j7fH9J6V03MMP/Bm2AUdVbQvVCly+05dZ2WkGdwALdCwC4kTqfpYaTSxN0p9Z2XkGdwALdCwC4EcEFAupeAMCNuFUEAdU/3SfadGRyLsST09e5a3IuBLT14OJxaIjH49AQ2NaDS2UBOojHAnQQlOACRGXJfwhIcAEi85JFCEZwAQCGIbgAAMMQXACAYQguAMAwBBcgMpNz9RHBCC5AVB6H1kcEJLhYgA4isgCdPmK+ocbBrQcXS/5DPJb810fMN9w4uPXg4iWLEE9OXrKoj5hruHFw68HlOOMfBoyp3u6o53m+0JZb26l9PqT+16N7Ovyij9iuOlb2PmZ/7HoX0NljhwMAuI86V6Oe55cmn06t7dw+71P/69E97X/RR2xXHSt7H7M/dr0L6ExwgbgEl+sEF5ZYVXD5BAAA///s3TEOgEAIBEBLf+XT/LqFsTQQmxOYYnqzxkDCHW6rH2AxoyLoy6jo3fEhI+YyKvqRcoeSgNC539+ug6cyIlauDk5vXMpdAwNCrvrKiLxydXB64/K8tDKLd4AUy9VkRF6pOqhxAbqyzl5GNKRxATrzA0EZ0cwFAAD//wMA9qcaFemH/40AAAAASUVORK5CYII=')",
             contextSeparatorBackground: "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQUlEQVR4nIzKSw4AIAxCQe7E/c9WozZ+YiMs3gYGAOKM5FN+FtpQoAkNFLBQBSs0dgdd8IcWVCiNRr0GAAD//wMAMxCBfyEN4bcAAAAASUVORK5CYII=') repeat"
         
         }
@@ -59,7 +60,8 @@
             bReviewTitleHover:   'hsl(60, 100%,  20%)',
             tReviewState:        themes.dark.palette.dimText,
             tReviewStateOverdue: 'hsl( 0, 100%,  40%)',
-            tReviewMembers:      themes.dark.palette.dimText
+            tReviewMembers:      themes.dark.palette.dimText,
+            dProgressBar:        themes.dark.images.progressBarBackgroundImage
         },
         
         toolbars: {
@@ -229,7 +231,7 @@
     ".review-members h5 { color: " + theme.pageHeader.tReviewMembers + "; } " +
     
     // Progress bar
-    "#status { -webkit-filter: invert(100%); } " +
+    "#status span { background-image: " + theme.pageHeader.dProgressBar + "; } " +
 
 
     /*----- Upper toolbar: Navigation -----*/
