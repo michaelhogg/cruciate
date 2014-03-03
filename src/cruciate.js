@@ -176,7 +176,7 @@
                 }
             },
             contextSeparator: {
-                dBackground: "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQUlEQVR4nIzKSw4AIAxCQe7E/c9WozZ+YiMs3gYGAOKM5FN+FtpQoAkNFLBQBSs0dgdd8IcWVCiNRr0GAAD//wMAMxCBfyEN4bcAAAAASUVORK5CYII=') repeat",
+                dBackground: "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQUlEQVR4nIzKSw4AIAxCQe7E/c9WozZ+YiMs3gYGAOKM5FN+FtpQoAkNFLBQBSs0dgdd8IcWVCiNRr0GAAD//wMAMxCBfyEN4bcAAAAASUVORK5CYII=')",
                 sHeight:     '50px'
             }
         },
@@ -401,7 +401,7 @@
 
     // Context separator
     ".activeFrx .diffSkipped    { border: 0; } " +
-    ".activeFrx .diffSkipped td { background: " + theme.diff.contextSeparator.dBackground + "; height: " + theme.diff.contextSeparator.sHeight + "; } " +
+    ".activeFrx .diffSkipped td { background: " + theme.diff.contextSeparator.dBackground + " repeat; height: " + theme.diff.contextSeparator.sHeight + "; } " +
 
 
     /*----- Disable line highlighting -----*/
