@@ -46,7 +46,9 @@
             contextSeparatorBackground: "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQUlEQVR4nIzKSw4AIAxCQe7E/c9WozZ+YiMs3gYGAOKM5FN+FtpQoAkNFLBQBSs0dgdd8IcWVCiNRr0GAAD//wMAMxCBfyEN4bcAAAAASUVORK5CYII=') repeat",
             
             upArrow:   "url('data:image/gif;base64,R0lGODlhCQANAPQAMQAAAAsJBhENChQQCx8YEiohGDYqHjgsID4xI0Q1Jkk6KnlgRYptTpBxUrqTar2Va8OZbsaccNGlduW0gui2g+q5hfC9iCf5AQMn+QEAAAAA6O2UAAAAAAAAAAAAAAAAACwAAAAACQANAAAFNSAgjuS4GCXAWNNBNpZUUYlYWNCgUJHtCCLEQyQIAE4AAmnVesVmNcAtt+tJf8EhoEhSpkYhADs=')",
-            downArrow: "url('data:image/gif;base64,R0lGODlhCQANAPQAMQAAAAsJBhENChQQCx8YEiohGDYqHjgsID4xI0Q1Jkk6KnlgRYptTpBxUrqTar2Va8OZbsaccNGlduW0gui2g+q5hfC9iLc3AgO3NwIAAAAA6O2UAAAAAAA4XWxz/38AACwAAAAACQANAAAFNCAgjqQQkIRYOIKIPKoFDQoVjY0lVVRCMpbJYWQCLAyAFGDVArxis9pNlNv1fsEhyYjcekMAOw==')"
+            downArrow: "url('data:image/gif;base64,R0lGODlhCQANAPQAMQAAAAsJBhENChQQCx8YEiohGDYqHjgsID4xI0Q1Jkk6KnlgRYptTpBxUrqTar2Va8OZbsaccNGlduW0gui2g+q5hfC9iLc3AgO3NwIAAAAA6O2UAAAAAAA4XWxz/38AACwAAAAACQANAAAFNCAgjqQQkIRYOIKIPKoFDQoVjY0lVVRCMpbJYWQCLAyAFGDVArxis9pNlNv1fsEhyYjcekMAOw==')",
+            
+            hiddenCommentMarker: "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA8JAAAPCQHhvMvxAAAAWElEQVR4nGJgmPRiHxDb////n4EczADU/AeKyTII2QCyDMJmAEkG4TOAKIOIMQCvQaQYgNUgcgxAMWhADCDbC2QHItnRSHZCIjspk52ZKMrOAAAAAP//AwA8O6F/wotm5gAAAABJRU5ErkJggg==')"
         
         }
     
@@ -117,6 +119,8 @@
         bFileCommentsSeparator: 'hsl(0, 0%, 66%)',
         
         oColumnVerticalBorder: themes.dark.palette.commonBorders,
+        
+        dHiddenCommentMarker: themes.dark.images.hiddenCommentMarker,
         
         diffNav: {
             dUpArrow:   themes.dark.images.upArrow,
@@ -343,6 +347,7 @@
 
     // Column 1
     ".tetrisColumn { background-color: " + theme.bMainBackground + "; font-size: 1pt; } " +
+    "span.tetrisCommentHidden { display: inline-block; width: 16px; height: 16px; top: 0px; background: " + theme.dHiddenCommentMarker + " no-repeat 0px 0px; } " +
 
     // Column 2
     ".diffNav       { background-color: " + theme.bMainBackground + "; border-right: " + theme.oColumnVerticalBorder + "; font-size: 1pt; } " +
