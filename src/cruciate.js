@@ -29,9 +29,9 @@
         
             commonBorders: '1px solid hsl(0, 0%, 40%)',
         
-            fileChanged: 'hsl(210,  50%, 85%)',
-            fileAdded:   'hsl(120, 100%, 45%)',
-            fileDeleted: 'hsl(  0, 100%, 55%)',
+            blueText:  'hsl(210,  50%, 85%)',
+            greenText: 'hsl(120, 100%, 45%)',
+            redText:   'hsl(  0, 100%, 55%)',
         
             tokenBlue:   'hsl(210, 100%, 80%)',
             tokenPurple: 'hsl(290, 100%, 80%)',
@@ -70,11 +70,11 @@
         },
         
         lowerToolbar: {
-            tFileChangedName: themes.dark.palette.fileChanged,
+            tFileChangedName: themes.dark.palette.blueText,
             tFileChangedTag:  'hsl(210, 100%, 40%)',
-            tFileAddedName:   themes.dark.palette.fileAdded,
+            tFileAddedName:   themes.dark.palette.greenText,
             tFileAddedTag:    'hsl(120, 100%, 30%)',
-            tFileDeletedName: themes.dark.palette.fileDeleted,
+            tFileDeletedName: themes.dark.palette.redText,
             tFileDeletedTag:  'hsl(  0, 100%, 40%)',
             tDropdownMenuFileOutdated: 'hsl(0, 100%, 66%) !important'  // !important is required because the original style is also !important
         },
@@ -87,9 +87,9 @@
             tSourceNode:    themes.dark.palette.brightText,
             tFolder:        themes.dark.palette.brightText,
             tCommentCount:  themes.dark.palette.brightText,
-            tFileChanged:   themes.dark.palette.fileChanged,
-            tFileAdded:     themes.dark.palette.fileAdded,
-            tFileDeleted:   themes.dark.palette.fileDeleted,
+            tFileChanged:   themes.dark.palette.blueText,
+            tFileAdded:     themes.dark.palette.greenText,
+            tFileDeleted:   themes.dark.palette.redText,
             oInactiveFile:  '2px solid hsl(  0,   0%,  0%)',
             oActiveFile:    '2px solid hsl(210, 100%, 80%)',
             bActiveFile:    'hsl(210, 100%, 30%)'
