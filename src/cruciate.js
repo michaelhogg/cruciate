@@ -47,6 +47,8 @@
         font: 'Monaco',
         
         bMainBackground: 'hsl(0, 0%, 0%)',
+        
+        tLinks: themes.dark.palette.blueText,
 
         pageHeader: {
             tReviewTitle:        themes.dark.palette.brightText,
@@ -211,6 +213,11 @@
     /*----- Body -----*/
 
     "body { background-color: " + theme.bMainBackground + "; } " +
+    
+
+    /*----- Links -----*/
+
+    "a { color: " + theme.tLinks + "; } " +
     
 
     /*----- Page header -----*/
