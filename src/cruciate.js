@@ -29,8 +29,8 @@
         
             commonBorders: '1px solid hsl(0, 0%, 40%)',
         
-            blueText:  'hsl(210,  50%, 85%)',
-            greenText: 'hsl(120, 100%, 45%)',
+            blueText:  'hsl(210,  50%, 80%)',
+            greenText: 'hsl(120, 100%, 40%)',
             redText:   'hsl(  0, 100%, 55%)',
         
             tokenBlue:   'hsl(210, 100%, 80%)',
