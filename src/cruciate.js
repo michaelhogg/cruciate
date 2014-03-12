@@ -72,12 +72,13 @@
         },
         
         lowerToolbar: {
-            tFileChangedName: themes.dark.palette.blueText,
-            tFileChangedTag:  'hsl(210, 100%, 40%)',
-            tFileAddedName:   themes.dark.palette.greenText,
-            tFileAddedTag:    'hsl(120, 100%, 30%)',
-            tFileDeletedName: themes.dark.palette.redText,
-            tFileDeletedTag:  'hsl(  0, 100%, 40%)',
+            tFileChangedName:  themes.dark.palette.blueText,
+            tFileChangedTag:   'hsl(210, 100%, 40%)',
+            tFileAddedName:    themes.dark.palette.greenText,
+            tFileAddedTag:     'hsl(120, 100%, 30%)',
+            tFileDeletedName:  themes.dark.palette.redText,
+            tFileDeletedTag:   'hsl(  0, 100%, 40%)',
+            tNewSinceLastRead: themes.dark.palette.greenText,
             tDropdownMenuFileOutdated: 'hsl(0, 100%, 66%) !important'  // !important is required because the original style is also !important
         },
         
@@ -273,6 +274,8 @@
 
     "#content-column span.frx-deleted                { color: " + theme.lowerToolbar.tFileDeletedName + "; } " +
     "#content-column span.operation-text.frx-deleted { color: " + theme.lowerToolbar.tFileDeletedTag  + "; } " +
+    
+    ".frxSlider-cells td.new a { color: " + theme.lowerToolbar.tNewSinceLastRead + "; } " +
     
     ".frx-outdated a.aui-dd-link { color: " + theme.lowerToolbar.tDropdownMenuFileOutdated + "; } " +
 
