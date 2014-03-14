@@ -216,12 +216,10 @@
     "body { background-color: " + theme.bMainBackground + "; } " +
     
 
-    /*----- Links -----*/
-
-    "a { color: " + theme.tLinks + "; } " +
-    
-
     /*----- Page header -----*/
+
+    // Header links
+    "div#review-waypost h2#review-crumb span a { color: " + theme.tLinks + "; } " +
 
     // Review title
     "#reviewHead                { color:            " + theme.pageHeader.tReviewTitle      + "; } " +
@@ -286,6 +284,7 @@
     /*----- Navigation -----*/
     
     "#reviewpage #content-navigation           { border:     " + theme.navigation.oBorder        + "; background-color: " + theme.bMainBackground + "; } " +
+    "#navigation-tree .activeFrx li span a     { color:      " + theme.tLinks                    + "; } " +
     "#frx-overview span.number-of-files        { color:      " + theme.navigation.tNumberOfFiles + "; } " +
     "#tree-root li.source-node .source-node-hr { border-top: " + theme.navigation.oSourceNodeHR  + "; } " +
     "#tree-root li.source-node > span          { background: " + theme.navigation.bSourceNode    + "; color: " + theme.navigation.tSourceNode + "; } " +
