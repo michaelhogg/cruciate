@@ -223,11 +223,9 @@
 
     /*----- Page header -----*/
 
-    // Review title: colour
-    "#reviewHead              { color: " + theme.pageHeader.tReviewTitle + "; } " +
-    "#reviewHead span.title a { color: " + theme.pageHeader.tReviewTitle + "; } " +
-
-    // Review title: background colour
+    // Review title
+    "#reviewHead                { color:            " + theme.pageHeader.tReviewTitle      + "; } " +
+    "#reviewHead span.title a   { color:            " + theme.pageHeader.tReviewTitle      + "; } " +
     "#reviewHead.editable:hover { background-color: " + theme.pageHeader.bReviewTitleHover + "; } " +
     
     // Review state
