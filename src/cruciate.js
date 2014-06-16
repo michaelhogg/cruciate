@@ -185,6 +185,7 @@
         },
         
         userComment: {
+            sCodePadding:       '10px',
             bDefault:           'hsl(60, 25%, 60%)',
             bRead:              'hsl(60, 25%, 60%)',
             bUnread:            'hsl(60, 35%, 80%)',
@@ -418,6 +419,9 @@
     
 
     /*----- User comments -----*/
+
+    ".comment .markup .codeContent { padding:     " + theme.userComment.sCodePadding + "; } " +
+    ".comment .markup .code pre    { font-family: " + theme.monospaceFontFamily      + "; } " +
 
     ".comment                    { border: 0; background-color: " + theme.userComment.bDefault           + "; } " +
     ".comment.read               { border: 0; background-color: " + theme.userComment.bRead              + "; } " +
