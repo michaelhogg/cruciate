@@ -44,7 +44,7 @@
     
     themes.dark.properties = {
     
-        font: 'Monaco',
+        monospaceFontFamily: 'Monaco',
         
         bMainBackground: 'hsl(0, 0%, 0%)',
         
@@ -357,12 +357,12 @@
     "td.revision { background-color: " + theme.revision.bBackground + "; color: " + theme.revision.tText + "; } " +
 
     // Column 5
-    "td.diffLineNumbers  { font-family: " + theme.font + "; color: " + theme.lineNumbers.normalLines.tText + "; background-color: " + theme.bMainBackground                  + "; } " +
-    "td.diffLineNumbersA { font-family: " + theme.font + "; color: " + theme.lineNumbers.oldLines.tText    + "; background-color: " + theme.lineNumbers.oldLines.bBackground + "; } " +
-    "td.diffLineNumbersB { font-family: " + theme.font + "; color: " + theme.lineNumbers.newLines.tText    + "; background-color: " + theme.lineNumbers.newLines.bBackground + "; } " +
+    "td.diffLineNumbers  { font-family: " + theme.monospaceFontFamily + "; color: " + theme.lineNumbers.normalLines.tText + "; background-color: " + theme.bMainBackground                  + "; } " +
+    "td.diffLineNumbersA { font-family: " + theme.monospaceFontFamily + "; color: " + theme.lineNumbers.oldLines.tText    + "; background-color: " + theme.lineNumbers.oldLines.bBackground + "; } " +
+    "td.diffLineNumbersB { font-family: " + theme.monospaceFontFamily + "; color: " + theme.lineNumbers.newLines.tText    + "; background-color: " + theme.lineNumbers.newLines.bBackground + "; } " +
 
     // Column 6
-    ".lineContent { font-family: " + theme.font                  + "; color: "        + theme.tCodeTextDefault      + "; } " +
+    ".lineContent { font-family: " + theme.monospaceFontFamily   + "; color: "        + theme.tCodeTextDefault      + "; } " +
     ".diffContent { border-left: " + theme.oColumnVerticalBorder + "; border-right: " + theme.oColumnVerticalBorder + "; background-color: " + theme.bMainBackground + "; } " +
 
 
