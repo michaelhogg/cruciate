@@ -44,7 +44,7 @@
     
     themes.dark.properties = {
     
-        monospaceFontFamily: 'Monaco',
+        monospaceFontFamily: 'Monaco, monospace',
         
         bMainBackground: 'hsl(0, 0%, 0%)',
         
