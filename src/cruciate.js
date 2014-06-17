@@ -89,6 +89,7 @@
             bSourceNode:    'hsl(0, 0%, 40%)',
             tSourceNode:    themes.dark.palette.brightText,
             tFolder:        themes.dark.palette.brightText,
+            folderOpacity:  '0.5',
             tCommentCount:  themes.dark.palette.brightText,
             tFileChanged:   themes.dark.palette.blueText,
             tFileAdded:     themes.dark.palette.greenText,
@@ -290,8 +291,8 @@
     "#navigation-tree .activeFrx li span a     { color:      " + theme.tLinks                    + "; } " +
     "#frx-overview span.number-of-files        { color:      " + theme.navigation.tNumberOfFiles + "; } " +
     "#tree-root li.source-node .source-node-hr { border-top: " + theme.navigation.oSourceNodeHR  + "; } " +
-    "#tree-root li.source-node > span          { background: " + theme.navigation.bSourceNode    + "; color: " + theme.navigation.tSourceNode + "; } " +
-    "#navigation-tree .tree span.folder        { color:      " + theme.navigation.tFolder        + "; } " +
+    "#tree-root li.source-node > span          { background: " + theme.navigation.bSourceNode    + "; color: "   + theme.navigation.tSourceNode   + "; } " +
+    "#navigation-tree .tree span.folder        { color:      " + theme.navigation.tFolder        + "; opacity: " + theme.navigation.folderOpacity + "; } " +
 
     "#navigation-tree .tree .stats .commentCount       { color: " + theme.navigation.tCommentCount + "; } " +
     "#navigation-tree .tree .stats .unreadCommentCount { color: " + theme.navigation.tCommentCount + "; } " +
