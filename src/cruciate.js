@@ -95,7 +95,9 @@
             tFileDeleted:   themes.dark.palette.redText,
             oInactiveFile:  '2px solid hsl(  0,   0%,  0%)',
             oActiveFile:    '2px solid hsl(210, 100%, 80%)',
-            bActiveFile:    'hsl(210, 100%, 30%)'
+            bActiveFile:    'hsl(210, 100%, 30%)',
+            unreadFileMarkerText:    "'\\0000A0\\002605'",  // non-breaking space, followed by black star
+            tUnreadFileMarkerColour: 'hsl(300, 100%, 50%)'
         },
         
         overviewGeneralComments: {
@@ -300,6 +302,8 @@
     
     "#tree-root li > span           { border-left: " + theme.navigation.oInactiveFile + "; } " +
     "#tree-root li.activeFrx > span { border-left: " + theme.navigation.oActiveFile   + "; background-color: " + theme.navigation.bActiveFile + "; } " +
+    
+    "#navigation-tree .tree span.frx-incomplete a::after { content: " + theme.navigation.unreadFileMarkerText + "; color: " + theme.navigation.tUnreadFileMarkerColour + "; } " +
     
     
     /*----- Overview and general comments -----*/
