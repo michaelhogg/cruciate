@@ -307,13 +307,13 @@
     "#navigation-tree .tree span.frx-incomplete a::after { content: " + theme.navigation.unreadFileMarkerText + "; color: " + theme.navigation.tUnreadFileMarkerColour + "; } " +
     
     
-    /*----- Overview and general comments -----*/
+    /*----- Overview -----*/
     
-    ".overview-item h4.overview-heading { color: " + theme.overview.tOverviewHeading + "; } " +
-
     "div#generalComments.activeFrx { background-color: " + theme.bMainBackground + "; } " +
     "#generalCommentsInner         { background-color: " + theme.bMainBackground + "; } " +
     
+    ".overview-item h4.overview-heading { color: " + theme.overview.tOverviewHeading + "; } " +
+
     "#details .base-table th { color: " + theme.overview.tTableHeaderCell + "; } " +
     "#details .base-table td { color: " + theme.overview.tTableNormalCell + "; } " +
     
