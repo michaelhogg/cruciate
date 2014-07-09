@@ -101,7 +101,7 @@
             tUnreadFileMarkerColour: 'hsl(300, 100%, 50%)'
         },
         
-        overviewGeneralComments: {
+        overview: {
             tOverviewHeading:   themes.dark.palette.brightText,
             tTableHeaderCell:   themes.dark.palette.brightText,
             tTableNormalCell:   themes.dark.palette.brightText,
@@ -309,19 +309,19 @@
     
     /*----- Overview and general comments -----*/
     
-    ".overview-item h4.overview-heading { color: " + theme.overviewGeneralComments.tOverviewHeading + "; } " +
+    ".overview-item h4.overview-heading { color: " + theme.overview.tOverviewHeading + "; } " +
 
     "div#generalComments.activeFrx { background-color: " + theme.bMainBackground + "; } " +
     "#generalCommentsInner         { background-color: " + theme.bMainBackground + "; } " +
     
-    "#details .base-table th { color: " + theme.overviewGeneralComments.tTableHeaderCell + "; } " +
-    "#details .base-table td { color: " + theme.overviewGeneralComments.tTableNormalCell + "; } " +
+    "#details .base-table th { color: " + theme.overview.tTableHeaderCell + "; } " +
+    "#details .base-table td { color: " + theme.overview.tTableNormalCell + "; } " +
     
-    "#review-meta-links li.top-level .heading       { color: " + theme.overviewGeneralComments.tLinkedIssue + "; } " +
-    "#review-meta-links li.top-level span.top-level { color: " + theme.overviewGeneralComments.tLinkedIssue + "; } " +
+    "#review-meta-links li.top-level .heading       { color: " + theme.overview.tLinkedIssue + "; } " +
+    "#review-meta-links li.top-level span.top-level { color: " + theme.overview.tLinkedIssue + "; } " +
     
-    ".overview-body .overview-content .objectives .meta-objectives { color: " + theme.overviewGeneralComments.tNoObjectives      + "; } " +
-    ".overview-body .overview-content #no-general-comments em      { color: " + theme.overviewGeneralComments.tNoGeneralComments + "; } " +
+    ".overview-body .overview-content .objectives .meta-objectives { color: " + theme.overview.tNoObjectives      + "; } " +
+    ".overview-body .overview-content #no-general-comments em      { color: " + theme.overview.tNoGeneralComments + "; } " +
     
 
     /*----- Container for lower toolbar and source code -----*/
