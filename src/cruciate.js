@@ -314,14 +314,21 @@
     
     ".overview-item h4.overview-heading { color: " + theme.overview.tOverviewHeading + "; } " +
 
-    "#details .base-table th { color: " + theme.overview.tTableHeaderCell + "; } " +
-    "#details .base-table td { color: " + theme.overview.tTableNormalCell + "; } " +
+    "#details .base-table th   { color: " + theme.overview.tTableHeaderCell     + "; } " +
+    "#details .base-table td   { color: " + theme.overview.tTableNormalCell     + "; } " +
+    "#details .base-table td a { color: " + theme.tLinks + "; text-decoration: none; } " +
     
-    "#review-meta-links li.top-level .heading       { color: " + theme.overview.tLinkedIssue + "; } " +
-    "#review-meta-links li.top-level span.top-level { color: " + theme.overview.tLinkedIssue + "; } " +
+    "#review-meta-links li.top-level .heading       { color: " + theme.overview.tLinkedIssue         + "; } " +
+    "#review-meta-links li.top-level span.top-level { color: " + theme.overview.tLinkedIssue         + "; } " +
+    "#review-meta-links li.top-level a.jira-link    { color: " + theme.tLinks + "; text-decoration: none; } " +
     
-    ".overview-body .overview-content .objectives .meta-objectives { color: " + theme.overview.tNoObjectives      + "; } " +
-    ".overview-body .overview-content #no-general-comments em      { color: " + theme.overview.tNoGeneralComments + "; } " +
+    ".overview-heading .edit-objectives.edit-link { color: " + theme.tLinks + "; text-decoration: none; } " +
+
+    ".overview-body .overview-content .objectives .meta-objectives                      { color: " + theme.overview.tNoObjectives        + "; } " +
+    ".overview-body .overview-content .objectives .meta-objectives .tip-edit-objectives { color: " + theme.tLinks + "; text-decoration: none; } " +
+    
+    ".overview-body .overview-content #no-general-comments em { color: " + theme.overview.tNoGeneralComments   + "; } " +
+    ".overview-body .overview-content #addReviewCommentLink   { color: " + theme.tLinks + "; text-decoration: none; } " +
     
 
     /*----- Container for lower toolbar and source code -----*/
