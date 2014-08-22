@@ -37,13 +37,3 @@ java -jar compiler.jar --js src/cruciate.js \
 | tr '\n' ' ' \
 > build/cruciate.js
 ```
-
-## Extras
-
-### Hiding the blame gutter
-
-If you don't need to see the blame gutter (with author and revision information), use this bookmarklet to hide it.
-
-```
-javascript: (function(){var a=document.createElement("style");a.type="text/css";a.appendChild(document.createTextNode(".blameAuthGutter, .blameRevGutter { display: none; }")); document.getElementsByTagName("head")[0].appendChild(a)})();
-```
