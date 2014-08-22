@@ -1,6 +1,6 @@
-# cruciate
+# Cruciate
 
-Colour themes bookmarklet for [Atlassian](http://www.atlassian.com/)'s [Crucible](http://www.atlassian.com/software/crucible/).
+Dark colour theme bookmarklet for [Atlassian](http://www.atlassian.com/)'s [Crucible](http://www.atlassian.com/software/crucible/).
 
 Tested with Crucible 3.2.4.
 
